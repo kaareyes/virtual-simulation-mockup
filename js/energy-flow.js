@@ -54,7 +54,7 @@
       var grp = S('g'); add(grp, at);
       grp.appendChild(S('polygon', { points: VE.Pyramid.pts(r.pts), fill: l.color, stroke: '#fff', 'stroke-width': 2.5, 'stroke-linejoin': 'round' }));
       var items = pool.filter(function (o) { return o.trophicLevel === l.id; }).slice(0, 4);
-      var size = Math.max(18, Math.min(34, (r.hwm * 2 - 30) / Math.max(1, items.length) / 1.15));
+      var size = Math.max(16, Math.min(30, (r.hwm * 2 - 30) / Math.max(1, items.length) / 1.15));
       var total = items.length * size + Math.max(0, items.length - 1) * 8, x0 = geo.cx - total / 2;
       var nameY = r.y1 - 5;
       var lab = S('text', { class: 'sc-label', x: geo.cx, y: items.length ? r.y0 + 14 : r.cy + 5, 'text-anchor': 'middle', fill: l.id === 'secondary_consumer' ? '#4a3a00' : '#fff' }); lab.textContent = l.label; grp.appendChild(lab);

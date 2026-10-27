@@ -26,7 +26,7 @@
    */
   function render(host, opts) {
     var levels = opts.levels, n = levels.length;
-    var geo = geometry(n, { levelHeight: opts.levelHeight, gap: opts.gap, flatTop: opts.flatTop, baseWidth: opts.baseWidth, cx: opts.cx });
+    var geo = geometry(n, { levelHeight: opts.levelHeight, gap: opts.gap, flatTop: opts.flatTop, flatTopRatio: opts.flatTopRatio, baseWidth: opts.baseWidth, cx: opts.cx });
     var W = 680, pad = opts.slots ? 10 : 4;
     var svg = S('svg', { class: 'pyramid-svg', viewBox: '0 0 ' + W + ' ' + (geo.H + pad * 2), role: 'group', 'aria-label': 'Food pyramid' });
     var g = S('g', { transform: 'translate(0,' + pad + ')' });
@@ -50,8 +50,10 @@
       var poly = S('polygon', { points: pts(r.pts), fill: lv.color, 'fill-opacity': lv.dashed ? 0.28 : 1, stroke: lv.dashed ? lv.color : '#fff', 'stroke-width': lv.dashed ? 2 : 2.5, 'stroke-dasharray': lv.dashed ? '7 5' : null, 'stroke-linejoin': 'round' });
       node.appendChild(poly);
       var hasItems = lv.items && lv.items.length && !lv.hideItems;
-      var label = S('text', { class: 'py-label', x: geo.cx, y: hasItems ? r.y0 + 17 : r.cy + 5, 'text-anchor': 'middle', fill: lv.dashed ? '#0b3d62' : (lv.textColor || '#fff') });
+      var label = S('text', { class: 'py-label', x: geo.cx, y: hasItems ? r.y0 + 15 : r.cy + 5, 'text-anchor': 'middle', fill: lv.dashed ? '#0b3d62' : (lv.textColor || '#fff') });
       label.textContent = lv.label + (lv.text ? ' ' + lv.text : '');
+      var availW = (hasItems ? r.hw0 : r.hwm) * 2 - 22, estW = label.textContent.length * 8;
+      if (estW > availW) label.setAttribute('font-size', Math.max(8.5, 14 * availW / estW).toFixed(1));
       node.appendChild(label);
       var itemsG = S('g', { class: 'py-items' });
       node.appendChild(itemsG);
@@ -68,10 +70,10 @@
       var r = entry.row; UI.clear(entry.itemsG);
       if (hide || !items || !items.length) return;
       var cnt = items.length, avail = r.hwm * 2 - 26;
-      var size = Math.max(16, Math.min(r.y1 - r.y0 - 28, avail / (cnt * 1.1), 46));
+      var size = Math.max(14, Math.min(r.y1 - r.y0 - 44, avail / (cnt * 1.1), 46));
       var total = cnt * size + (cnt - 1) * Math.min(14, size * 0.3);
       var start = geo.cx - total / 2, step = size + Math.min(14, size * 0.3);
-      var imgY = r.y0 + 22;
+      var imgY = r.y0 + 21;
       items.forEach(function (o, k) {
         var x = start + k * step + size / 2;
         var im = S('image', { href: VE.Org.imageSrc(o), x: x - size / 2, y: imgY, width: size, height: size, preserveAspectRatio: 'xMidYMid meet', class: 'py-item' + (animate ? ' pop-in' : ''), 'aria-hidden': 'true' });

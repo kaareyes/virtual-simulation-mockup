@@ -60,7 +60,7 @@
       }
       var wrap = el('div', { class: 'pyramid-wrap' });
       left.appendChild(wrap);
-      VE.Pyramid.render(wrap, { levels: levels, levelHeight: st.expanded ? 74 : 104, gap: 4, onSelect: choose });
+      VE.Pyramid.render(wrap, { levels: levels, flatTop: true, flatTopRatio: 0.3, levelHeight: st.expanded ? 78 : 104, gap: 4, onSelect: choose });
     }
     function Eco_label(d, id) { return d.find(function (l) { return l.id === id; }).label; }
     function Eco_color(d, id) { return d.find(function (l) { return l.id === id; }).color; }
