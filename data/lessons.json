@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "lessons": [
+    {
+      "id": "les_001",
+      "title": "Trophic Levels",
+      "subtitle": "Trophic Levels",
+      "order": 1,
+      "enabled": true,
+      "description": "Learn about the levels of a food pyramid and how they depend on each other.",
+      "objectives": [
+        "Identify the trophic levels in a food pyramid.",
+        "Describe each trophic level as a level of energy in a food pyramid.",
+        "Explain how a change in the number of organisms in one level affects the other levels."
+      ],
+      "activities": [
+        {
+          "id": "act_001",
+          "type": "explore",
+          "group": "Explore",
+          "title": "Explore",
+          "enabled": true,
+          "mode": "qualitative",
+          "instructions": "Click a level of the pyramid to learn about it.",
+          "hint": ""
+        },
+        {
+          "id": "act_002",
+          "type": "arrange",
+          "group": "Arrange",
+          "title": "Arrange",
+          "enabled": true,
+          "excludeOrganismIds": [
+            "org_008"
+          ],
+          "instructions": "Drag each organism to the level of the pyramid where it belongs. Tap an organism to see a hint.",
+          "hint": "Think about what each organism eats."
+        },
+        {
+          "id": "act_003",
+          "type": "simulation",
+          "group": "Ecosystem",
+          "title": "Ecosystem",
+          "enabled": true,
+          "instructions": "Change how many organisms are in each level (1 to 5), press Play and watch the populations change.",
+          "hint": "Try removing all producers."
+        }
+      ]
+    },
+    {
+      "id": "les_002",
+      "title": "Transfer of Energy",
+      "subtitle": "Transfer of Energy",
+      "order": 2,
+      "enabled": true,
+      "description": "Follow the energy from the sun through the food pyramid.",
+      "objectives": [
+        "Use a food pyramid example to describe how energy moves from one trophic level to the next.",
+        "Describe how much energy passes to the next level and where the rest goes.",
+        "Explain why there are fewer organisms at the top of the food pyramid."
+      ],
+      "activities": [
+        {
+          "id": "act_004",
+          "type": "explore",
+          "group": "Explore",
+          "title": "Explore",
+          "enabled": true,
+          "mode": "percent",
+          "instructions": "Click a level of the pyramid to see how much energy it receives.",
+          "hint": ""
+        },
+        {
+          "id": "act_005",
+          "type": "arrange",
+          "group": "Arrange",
+          "title": "Arrange Organisms",
+          "enabled": true,
+          "excludeOrganismIds": [
+            "org_008"
+          ],
+          "instructions": "Drag each organism to the level where it belongs.",
+          "hint": "Think about what each organism eats."
+        },
+        {
+          "id": "act_006",
+          "type": "arrangeEnergy",
+          "group": "Arrange",
+          "title": "Arrange Energy",
+          "enabled": true,
+          "decoys": [
+            "50%",
+            "5%",
+            "0.5%"
+          ],
+          "instructions": "Drag each energy value to the correct level. About 10% passes to the next level.",
+          "hint": "Each level gets about one tenth of the level below it."
+        },
+        {
+          "id": "act_007",
+          "type": "energyAnimation",
+          "group": "Transfer",
+          "title": "Transfer of Energy",
+          "enabled": true,
+          "instructions": "Watch how energy moves up the pyramid. Press Next to go step by step.",
+          "hint": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "simulationSettings": [
+    {
+      "id": "sim_001",
+      "ecosystemId": "eco_001",
+      "durationDays": 60,
+      "daysPerSecond": 1.5,
+      "seed": 2026,
+      "noise": 0.02,
+      "substeps": 4,
+      "carryingCapacityMultiplier": 1.5,
+      "transferPercent": 10,
+      "predationPressure": 0.15,
+      "starvationFactor": 1,
+      "halfSaturationRatio": 5
+    },
+    {
+      "id": "sim_002",
+      "ecosystemId": "eco_002",
+      "durationDays": 60,
+      "daysPerSecond": 1.5,
+      "seed": 2027,
+      "noise": 0.02,
+      "substeps": 4,
+      "carryingCapacityMultiplier": 1.5,
+      "transferPercent": 10,
+      "predationPressure": 0.15,
+      "starvationFactor": 1,
+      "halfSaturationRatio": 5
+    },
+    {
+      "id": "sim_003",
+      "ecosystemId": "eco_003",
+      "durationDays": 60,
+      "daysPerSecond": 1.5,
+      "seed": 2028,
+      "noise": 0.02,
+      "substeps": 4,
+      "carryingCapacityMultiplier": 1.5,
+      "transferPercent": 10,
+      "predationPressure": 0.15,
+      "starvationFactor": 1,
+      "halfSaturationRatio": 5
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "ecosystems": [
+    {
+      "id": "eco_001",
+      "name": "Mt. Agad-Agad Forest",
+      "shortName": "Mt. Agad-Agad",
+      "location": "Mt. Agad-Agad, Philippines",
+      "description": "A lush tropical mountain forest with grassy slopes, shrubs and tall trees.",
+      "backgroundImage": "assets/backgrounds/mt-agad-agad.jpg",
+      "simBackground": "assets/backgrounds/ecosystem-landscape.png",
+      "environment": {
+        "sunlight": 80,
+        "rainfall": 70,
+        "temperature": 24
+      },
+      "pyramid": [
+        {
+          "id": "producer",
+          "label": "Producer",
+          "shortLabel": "Producer",
+          "color": "#5aa63f",
+          "simGroup": "producer",
+          "description": "Makes its own food using sunlight.",
+          "energyDescription": "Makes its own food using sunlight.",
+          "energyLabel": "Most",
+          "role": "Captures energy from sunlight through photosynthesis and feeds every other level.",
+          "eatsText": "Makes its own food using sunlight.",
+          "diet": "Plants"
+        },
+        {
+          "id": "primary_consumer",
+          "label": "Primary Consumer",
+          "shortLabel": "Herbivore",
+          "color": "#1ab3d0",
+          "simGroup": "herbivore",
+          "description": "Eats producers.",
+          "energyDescription": "Eats plants (producers).",
+          "energyLabel": "More",
+          "role": "Moves energy from plants to animals. Controls plant growth by grazing.",
+          "eatsText": "Eats producers.",
+          "diet": "Herbivore"
+        },
+        {
+          "id": "secondary_consumer",
+          "label": "Secondary Consumer",
+          "shortLabel": "Omnivore",
+          "color": "#f5c518",
+          "simGroup": "omnivore",
+          "description": "Eats primary consumers.",
+          "energyDescription": "Eats plants and animals.",
+          "energyLabel": "Some",
+          "role": "Controls the number of herbivores.",
+          "eatsText": "Eats primary consumers.",
+          "diet": "Omnivore"
+        },
+        {
+          "id": "tertiary_consumer",
+          "label": "Tertiary Consumer",
+          "shortLabel": "Omnivore",
+          "color": "#8c4bd1",
+          "simGroup": "omnivore",
+          "description": "Eats secondary consumers.",
+          "energyDescription": "Eats plants and animals.",
+          "energyLabel": "Less",
+          "role": "Controls the number of secondary consumers.",
+          "eatsText": "Eats secondary consumers.",
+          "diet": "Omnivore"
+        },
+        {
+          "id": "top_predator",
+          "label": "Top Predator",
+          "shortLabel": "Top Predator",
+          "color": "#ee3b3b",
+          "simGroup": "top",
+          "description": "Sits at the top. Few or no other organisms eat it.",
+          "energyDescription": "Sits at the top. Few or no other organisms eat it.",
+          "energyLabel": "Least",
+          "role": "Keeps the whole food web in balance. Needs a large area to find enough food.",
+          "eatsText": "Eats other consumers.",
+          "diet": "Carnivore"
+        }
+      ],
+      "decomposerNote": "Bacteria & Fungi",
+      "active": true
+    },
+    {
+      "id": "eco_002",
+      "name": "Local Freshwater Ecosystem",
+      "shortName": "Freshwater Pond",
+      "location": "Local pond or river",
+      "description": "A pond ecosystem where algae feed tiny animals, fish and wading birds.",
+      "backgroundImage": "",
+      "simBackground": "",
+      "environment": {
+        "sunlight": 75,
+        "rainfall": 80,
+        "temperature": 27
+      },
+      "pyramid": [
+        {
+          "id": "producer",
+          "label": "Producer",
+          "shortLabel": "Producer",
+          "color": "#5aa63f",
+          "simGroup": "producer",
+          "description": "Makes its own food using sunlight.",
+          "energyDescription": "Makes its own food using sunlight.",
+          "energyLabel": "Most",
+          "role": "Captures energy from sunlight through photosynthesis and feeds every other level.",
+          "eatsText": "Makes its own food using sunlight.",
+          "diet": "Plants"
+        },
+        {
+          "id": "primary_consumer",
+          "label": "Primary Consumer",
+          "shortLabel": "Herbivore",
+          "color": "#1ab3d0",
+          "simGroup": "herbivore",
+          "description": "Eats producers.",
+          "energyDescription": "Eats plants (producers).",
+          "energyLabel": "More",
+          "role": "Moves energy from plants to animals. Controls plant growth by grazing.",
+          "eatsText": "Eats producers.",
+          "diet": "Herbivore"
+        },
+        {
+          "id": "secondary_consumer",
+          "label": "Secondary Consumer",
+          "shortLabel": "Omnivore",
+          "color": "#f5c518",
+          "simGroup": "omnivore",
+          "description": "Eats primary consumers.",
+          "energyDescription": "Eats plants and animals.",
+          "energyLabel": "Some",
+          "role": "Controls the number of herbivores.",
+          "eatsText": "Eats primary consumers.",
+          "diet": "Omnivore"
+        },
+        {
+          "id": "tertiary_consumer",
+          "label": "Tertiary Consumer",
+          "shortLabel": "Omnivore",
+          "color": "#8c4bd1",
+          "simGroup": "omnivore",
+          "description": "Eats secondary consumers.",
+          "energyDescription": "Eats plants and animals.",
+          "energyLabel": "Less",
+          "role": "Controls the number of secondary consumers.",
+          "eatsText": "Eats secondary consumers.",
+          "diet": "Omnivore"
+        },
+        {
+          "id": "top_predator",
+          "label": "Top Predator",
+          "shortLabel": "Top Predator",
+          "color": "#ee3b3b",
+          "simGroup": "top",
+          "description": "Sits at the top. Few or no other organisms eat it.",
+          "energyDescription": "Sits at the top. Few or no other organisms eat it.",
+          "energyLabel": "Least",
+          "role": "Keeps the whole food web in balance. Needs a large area to find enough food.",
+          "eatsText": "Eats other consumers.",
+          "diet": "Carnivore"
+        }
+      ],
+      "decomposerNote": "Bacteria & Fungi",
+      "active": true
+    },
+    {
+      "id": "eco_003",
+      "name": "Agricultural Ecosystem",
+      "shortName": "Rice Field",
+      "location": "Local farmland",
+      "description": "A rice and corn field where insects, frogs, snakes and owls share the food web.",
+      "backgroundImage": "",
+      "simBackground": "",
+      "environment": {
+        "sunlight": 85,
+        "rainfall": 60,
+        "temperature": 28
+      },
+      "pyramid": [
+        {
+          "id": "producer",
+          "label": "Producer",
+          "shortLabel": "Producer",
+          "color": "#5aa63f",
+          "simGroup": "producer",
+          "description": "Makes its own food using sunlight.",
+          "energyDescription": "Makes its own food using sunlight.",
+          "energyLabel": "Most",
+          "role": "Captures energy from sunlight through photosynthesis and feeds every other level.",
+          "eatsText": "Makes its own food using sunlight.",
+          "diet": "Plants"
+        },
+        {
+          "id": "primary_consumer",
+          "label": "Primary Consumer",
+          "shortLabel": "Herbivore",
+          "color": "#1ab3d0",
+          "simGroup": "herbivore",
+          "description": "Eats producers.",
+          "energyDescription": "Eats plants (producers).",
+          "energyLabel": "More",
+          "role": "Moves energy from plants to animals. Controls plant growth by grazing.",
+          "eatsText": "Eats producers.",
+          "diet": "Herbivore"
+        },
+        {
+          "id": "secondary_consumer",
+          "label": "Secondary Consumer",
+          "shortLabel": "Omnivore",
+          "color": "#f5c518",
+          "simGroup": "omnivore",
+          "description": "Eats primary consumers.",
+          "energyDescription": "Eats plants and animals.",
+          "energyLabel": "Some",
+          "role": "Controls the number of herbivores.",
+          "eatsText": "Eats primary consumers.",
+          "diet": "Omnivore"
+        },
+        {
+          "id": "tertiary_consumer",
+          "label": "Tertiary Consumer",
+          "shortLabel": "Omnivore",
+          "color": "#8c4bd1",
+          "simGroup": "omnivore",
+          "description": "Eats secondary consumers.",
+          "energyDescription": "Eats plants and animals.",
+          "energyLabel": "Less",
+          "role": "Controls the number of secondary consumers.",
+          "eatsText": "Eats secondary consumers.",
+          "diet": "Omnivore"
+        },
+        {
+          "id": "top_predator",
+          "label": "Top Predator",
+          "shortLabel": "Top Predator",
+          "color": "#ee3b3b",
+          "simGroup": "top",
+          "description": "Sits at the top. Few or no other organisms eat it.",
+          "energyDescription": "Sits at the top. Few or no other organisms eat it.",
+          "energyLabel": "Least",
+          "role": "Keeps the whole food web in balance. Needs a large area to find enough food.",
+          "eatsText": "Eats other consumers.",
+          "diet": "Carnivore"
+        }
+      ],
+      "decomposerNote": "Bacteria & Fungi",
+      "active": true
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "appSettings": {
+    "appTitle": "ENERGY FLOW IN THE ECOSYSTEM OF {ecosystem}",
+    "footerText": "A Science Learning Resource",
+    "defaultEcosystemId": "eco_001",
+    "defaultLanguage": "en",
+    "soundDefault": true,
+    "lockSteps": true,
+    "adminPin": "1234",
+    "adminPinEnabled": true,
+    "maxBackups": 10
+  }
+}

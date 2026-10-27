@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "name": "Virtual Ecosystem Database",
+  "revision": 1,
+  "updatedAt": "2026-10-27T00:00:00.000Z",
+  "files": [
+    "organisms.json",
+    "ecosystems.json",
+    "lessons.json",
+    "simulation-settings.json",
+    "app-settings.json"
+  ],
+  "note": "Manifest for the JSON database. Records live in the other files."
+}
